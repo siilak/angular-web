@@ -1,0 +1,41 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Customer support</a>
+            <a class="navbar-language" [routerLink]=" ['./home'] "><i class="glyphicon glyphicon-globe"></i><span class="text">English</span></a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a [routerLink]=" ['./home'] ">Home</a></li>
+                <li><a [routerLink]=" ['./nopayment'] ">No Payment</a></li>
+                <li><a [routerLink]=" ['./telia'] ">Telia</a></li>
+                <li><a [routerLink]=" ['./teliasms'] ">Telia sms</a></li>
+                <li><a [routerLink]=" ['./teliasorry'] ">Telia sorry</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <router-outlet></router-outlet>
+</main>
+
+<div class="footer">
+    <div>
+        <div class="col-xs-5"> 2016 Fortumo</div>
+        <div class="col-xs-7">
+            <div class="row social-icons">
+                <div class="col-xs-2">
+                    <a href="#"><i class="fa fa-chevron-up"></i></a>
+                </div>
+                <div class="col-xs-10">
+                    <div class="pull-right">
+                        <i class="fa fa-linkedin-square"></i>
+                        <i class="fa fa-facebook-square"></i>
+                        <i class="fa fa-twitter-square"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

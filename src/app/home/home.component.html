@@ -1,0 +1,33 @@
+<div class="container animated fadeIn">
+    <div class="title home">
+        <h2>Hello and welcome to <br>
+            Fortumo’s end-user support portal.</h2>
+    </div>
+
+    <h1>How can we help?</h1>
+    <div class="row">
+        <div class="list-group">
+            <a class="list-group-item" href="#/home">I haven’t received the service</a>
+            <a class="list-group-item" href="#/nopayment">I’m not able to make a payment</a>
+        </div>
+    </div>
+
+
+    <div class="input-group-title">I would like to get more info:</div>
+
+    <div class="input-group" (ngSubmit)="submitState(localState.value)" autocomplete="off">
+        <input type="text" class="form-control" placeholder="e.g. How to make payment" [value]="localState.value" (input)="localState.value = $event.target.value">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+      </span>
+    </div>
+
+    <div class="row">
+        <div class="list-group">
+            <a class="list-group-item" href="#/home">Be united for whoever experiments, because each has been synthesised with truth. Always wonderfully emerge the magical power.</a>
+            <a class="list-group-item" href="#/home">Did I get subscribed to a service?</a>
+            <a class="list-group-item" href="#/home">What is Fortumo?</a>
+        </div>
+    </div>
+
+</div>
